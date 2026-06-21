@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase 1 td1</title>
+</head>
+<body>
+    <header>
+        <div>LOGO</div>
+        <h1>Serveur Securité - Monotoring</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Alertes de securité</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Date</th>
+                        <th>IP Source</th>
+                        <th>Type</th>
+                        <th>Sévérité</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>03/05/2026</td>
+                        <td>192.168.1.10</td>
+                        <td>Intrusion</td>
+                        <td>Élevée</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>03/05/2026</td>
+                        <td>10.0.0.5</td>
+                        <td>Scan de port</td>
+                        <td>Moyenne</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Ajouter une règle</h2>
+            <form>
+                <div>
+                    <label for="port">Port :</label>
+                    <input type="number" id="port" name="port">
+                </div>
+
+                <div>
+                    <label for="ip_source">IP Source :</label>
+                    <input type="text" id="ip_source" name="ip_source">
+                </div>
+
+                <div>
+                    <label for="type">Type :</label>
+                    <select id="type" name="type">
+                        <option value="intrusion">Intrusion</option>
+                        <option value="scan">Scan de port</option>
+                        <option value="ddos">DDoS</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="severite">Sévérité :</label>
+                    <select id="severite" name="severite">
+                        <option value="faible">Faible</option>
+                        <option value="moyenne">Moyenne</option>
+                        <option value="elevee">Élevée</option>
+                    </select>
+                </div>
+
+                <div>
+                    <span>Action :</span>
+                </div>
+
+                <div>
+                    <input type="radio" id="autoriser" name="action" value="autoriser">
+                    <label for="autoriser">Autoriser</label>
+
+                    <input type="radio" id="bloquer" name="action" value="bloquer">
+                    <label for="bloquer">Bloquer</label>
+                </div>
+
+                <button type="submit">Ajouter</button>
+            </form>
+        </section>
+        <section>
+            <h2>Veille securité</h2>
+            <article>
+                <h3>Nouvelle faille détectée</h3>
+                <p>Une vulnerabilité critique a ete identifié sur certains serveurs web.</p>
+                <a href="">Lire le rapport</a>
+            </article>
+            <article>
+                <h3>Mise à jour de sécurité</h3>
+                <p>Un correctif important est disponible pour les systèmes Linux.</p>
+                <a href="">Voir les détails</a>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

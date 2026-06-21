@@ -1,0 +1,1 @@
+Je me suis parfois aidé d'ia pour à certains endroits du style et  pour le javascript sur les fonctions, mots-clés et différentes erreurs syntaxique.

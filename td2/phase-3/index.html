@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>td2 phase 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="barre-du-stock">
+        <h1>Gestionnaire de produit</h1>
+        <input type="search" id="search" placeholder="Rechercher un produit...">
+    </header>
+    <main>
+        <section>
+            <h2>Ajouter un articles</h2>
+            <form id="alert-form">
+                <div class="une-ligne-form">
+                    <label for="nom">nom article :</label>
+                    <input type="text" id="nom" name="nom">
+                </div>
+                <div class="une-ligne-form">
+                    <label for="description">Description:</label>
+                    <input type="text" id="desc" name="desc">
+                </div>
+                <div class="une-ligne-form">
+                    <label for="prix">Prix:</label>
+                    <input type="text" id="prix" name="prix">
+                </div>
+                <div class="une-ligne-form">
+                    <label for="quant">quantité:</label>
+                    <select id="quant" name="quant">
+                        <option value="faible">En stock</option>
+                        <option value="moyenne">Faible stock</option>
+                        <option value="elevee">Rupture de stock</option>
+                    </select>
+                </div>
+                <button type="submit">Ajouter</button>
+                <p id="msg-form" class="msg-form"></p>
+            </form>
+        </section>
+        <section class="grille-articles" id="section">
+            <article class="carte-article">
+                <span class="petit-numero">1</span>
+                <h2>Clavier mécanique</h2>
+                <p>Clavier RGB avec switches rapides pour gaming et bureautique.</p>
+                <p class="texte-prix">Prix : 79EUR</p>
+                <span class="pastille-couleur vert-stock">Statut : En stock</span>
+            </article>
+            <article class="carte-article">
+                <span class="petit-numero">2</span>
+                <h2>Souris ergonomique</h2>
+                <p>Souris sans fil avec précision haute performance.</p>
+                <p class="texte-prix">Prix : 39EUR</p>
+                <span class="pastille-couleur rouge-stock">Statut : Rupture de stock</span>
+            </article>
+
+            <article class="carte-article">
+                <span class="petit-numero">3</span>
+                <h2>Ecran 24 pouces</h2>
+                <p>Ecran Full HD ideal pour le travail et le multimedia.</p>
+                <p class="texte-prix">Prix : 149EUR</p>
+                <span class="pastille-couleur vert-stock">Statut : En stock</span>
+            </article>
+
+            <article class="carte-article">
+                <span class="petit-numero">4</span>
+                <h2>Casque audio</h2>
+                <p>Casque confortable avec reduction de bruit active.</p>
+                <p class="texte-prix">Prix : 89EUR</p>
+                <span class="pastille-couleur jaune-stock">Statut : Stock faible</span>
+            </article>
+        </section>
+        <p id="empty-msg" class="msg-vide" style="display:none;">Aucun produit ne correspond a la recherche.</p>
+    </main>
+</body>
+</html>
